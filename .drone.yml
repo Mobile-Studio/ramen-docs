@@ -18,7 +18,7 @@ pipeline:
   slack:
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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
-    channel: ramen-doc
+    channel: drone_deployments
     icon_emoji: ":robot_face:"
     template: >
       {{#success build.status}}
