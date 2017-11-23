@@ -18,7 +18,7 @@ services:
           - node.role == worker
       labels:
         traefik.docker.network: apps
-        traefik.port: 80
+        traefik.port: 1313
         traefik.frontend.rule: Host:ramen-docs.${SUBDOMAIN}
       resources:
         limits:
