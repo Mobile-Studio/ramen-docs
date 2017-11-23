@@ -1,11 +1,11 @@
 ---
 title: "Credits"
-description: "Peinau contributors"
+description: "Ramen contributors"
 ---
 
 
 ## github contributors
-{{%ghcontributors "https://api.github.com/repos/Peinau/hugo-dev-portal/contributors?per_page=100" %}}
+{{%ghcontributors "https://api.github.com/repos/Mobile-studio/ramen-docs/contributors?per_page=100" %}}
 
 ## Tooling
 
