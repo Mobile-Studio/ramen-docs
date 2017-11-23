@@ -1,0 +1,6 @@
+stack:
+  company: Sodimac
+  environment: Sandbox
+deployment:
+  name: ramen-docs
+  version: 1.0.0

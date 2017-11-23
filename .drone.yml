@@ -1,6 +1,8 @@
 pipeline:
   build:
     image: node:6.11.3
+    commands:
+      - npm install -quiet --silent
 
   docker:
     image: plugins/docker
@@ -12,18 +14,6 @@ pipeline:
       - c-${DRONE_COMMIT_SHA}
       - b-${DRONE_BUILD_NUMBER}
     secrets: [ docker_password ]
-
-  deploy:
-    image: sodimaccr.azurecr.io/drone-deployer:b-4
-    auth_config:
-      username: sodimaccr
-      password: PniWFqHVpvZAVK3Aj7/JC5W6kdLr4j9V
-    uri: http://deployer:3000/deployer/v1/deployments
-    stack: docs
-    filename: stack.yml
-    version: b-${DRONE_BUILD_NUMBER}
-    when:
-      branch: master
 
   slack:
     image: plugins/slack

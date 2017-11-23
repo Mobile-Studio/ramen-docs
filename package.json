@@ -1,0 +1,24 @@
+{
+  "name": "ramen-docs",
+  "version": "1.0.0",
+  "description": "Ramen Documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mobile-Studio/ramen-docs.git"
+  },
+  "keywords": [
+    "Ramen",
+    "CLI",
+    "holding"
+  ],
+  "author": "David Antonio Muñoz Gaete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mobile-Studio/ramen-docs/issues"
+  },
+  "homepage": "https://github.com/Mobile-Studio/ramen-docs#readme"
+}
