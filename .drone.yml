@@ -20,9 +20,5 @@ pipeline:
     webhook: https://hooks.slack.com/services/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
     channel: drone_deployments
     icon_emoji: ":robot_face:"
-    template: >
-      {{#success build.status}}
-        [{{repo.name}}] @{{build.author}} build {{build.number}} succeeded. Good job.
-      {{else}}
-        [{{repo.name}}] @{{build.author}} build {{build.number}} failed. Fix me please.
-      {{/success}}
+    when:
+      status: [ success, failure ]
