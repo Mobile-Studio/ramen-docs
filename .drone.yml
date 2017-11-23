@@ -8,7 +8,7 @@ pipeline:
     image: plugins/docker
     registry: sodimaccr.azurecr.io
     username: sodimaccr
-    repo: sodimaccr.azurecr.io/ramen-doc
+    repo: sodimaccr.azurecr.io/ramen-docs
     tags:
       - latest
       - c-${DRONE_COMMIT_SHA}
